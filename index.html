@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> <!---imagem logo da letra A-->
+</head>
+
+<body>
+
+    <!--Cabecalho da Página-->
+    <div class="background">
+        <header> <!----agrupa conteúdo introdutório de uma seção-->
+
+            <div class="logo">
+                <i class="fa-sharp fa-regular fa-a"></i> <!---link da imagem do logo-->
+            </div>
+
+            <div class="links-Internos">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#educacao">Educação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <button onclick="window.location.href='#contato'">Entrar em contato</button>
+            </div>
+
+        </header>
+    </div>
+    <!---Secao Sobre mim-->
+        <section class="topoDoSite" id="sobre-mim">
+            <div class="interface"> <!---classe para agrupar todos os itens do topoSite-->
+                <div class="flex"> <!---classe para trabalhar posicionamento de itens-->
+                    <div class="txt-topo-site">
+                        <h1>UM POUCO SOBRE MIM.</h1>
+                        <p> Olá, meu nome é Ana Eliza e esse é meu portfólio. Sou estudante
+                        do curso de Tecnologia em ADS e também vestibulanda,
+                        Confira alguns de meus projetos!</p>
+                    </div> <!----txt topo do site-->
+                    <div class="img-topo-site">
+                        <img src="IMAGEM CERTA.png" alt="">
+                    </div> <!---img site-->
+                </div>
+            </div><!---interface-->
+        </section> <!--- seção topo do site-->
+    
+    <!----Secao Educacao-->
+        <section class="Formacao" id="educacao">
+            <div class="interface">
+                <div class="flex">
+                    <div class="lista-formacao">
+
+                        <h1>JORNADA ACADÊMICA.</h1>
+                        <ul> <!---abre uma lista-->
+                            <li>●Cursando Tecnologia em Análise e Desenvolvimento de Sistemas <br>
+                                (2025-2027) <br>
+                                <br>
+                            </li>
+                            <li>●Curso de Informática Básica <br>
+                                Escola Vallucel <br>
+                                (Jan 2023 - Junho 2024) <br>
+                                Duração: 96 horas <br>
+                                <br>
+                            </li>
+                            <li>●Curso Lógica de Programação e Algoritmos <br>
+                                Plataforma Curso em Vídeo  <br>
+                                Duração: 40 horas <br>
+                                <br>
+                            </li>
+                        </ul>
+
+                    </div> <!---lista sobre Formacao-->
+                </div> <!---Flex-->
+            </div><!---interface-->
+        </section> <!--- seção formacao-->
+    
+    <!---Secao Projetos-->
+    <section class="projetos" id="projetos">
+        <div class="interface">
+            <h2 class="titulo-projetos">MEUS PROJETOS.</h2>
+            <div class="flex-projetos">
+
+                <!---PROJETO 1-->
+                <div class="projeto-item"> <!---item se refere a cada projeto-->
+                    <h3>Banco de Dados Relacional</h3>
+                    <p>Este projeto apresenta um Modelo Conceitual para uma rede de Hotéis</p>
+                    <a href="https://www.notion.so/Modelo-Conceitual-Banco-de-Dados-Relacional-para-uma-Rede-de-Hot-is-2616c6f1ab7380d1a171e53315bc8b00?source=copy_link" target="_blank">Ver Imagem</a>
+                </div> <!--item projetos--->
+
+                <!---PROJETO 2-->
+                <div class="projeto-item">
+                    <h3>App de Vendas para uma Marmitaria</h3>
+                    <p>App desenvolvido pelo Google Colab utilizando a linguagem Python.</p>
+                    <a href="https://www.notion.so/App-de-Vendas-para-Marmitaria-2616c6f1ab7380148cadeaf8104c3f72?source=copy_link" target="_blank">Ver Código e Exemplo de Saída</a>
+                </div> <!---item projetos-->
+
+            </div> <!--flex projetos-->
+        </div><!--interface-->
+    </section> <!--secao Projetos-->
+
+    <!---SECAO ENTRAR EM CONTATO-->
+    <section class="contato" id="contato">
+        <div class="interface">
+            <h2 class="titulo-contato">ENTRE EM CONTATO.</h2>
+            <form action="#" method="POST"> <!---especifica que os dados serao enviados pelo método HTTP POST--->
+                <div class="input-grupo">
+                    <input type="text" name="nome" placeholder="Digite seu nome" required> <!---required para campos obrigatorios-->
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea> <!----campo nao obrigatorio-->
+                <button type="submit">Enviar</button>
+            </form>
+        </div> <!---interface-->
+    </section> <!---contato-->
+
+</body>
+
+</html>

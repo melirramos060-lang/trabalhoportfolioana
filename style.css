@@ -1,0 +1,282 @@
+
+
+/*O * MANIPULA TODOS OS ELEMENTOS DA PAGINA*/
+*{
+    margin: 0; /*retira a margem da lista com os links internos*/
+    padding: 0; /*retira os padding*/
+    box-sizing: border-box; /*faz com que a largura e a altura definidas alterem o conteúdo, o padding e a borda*/
+    text-decoration: none; /*retirar sublinhado*/
+    list-style: none; /*retira os marcadores*/
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/*PLANO DE FUNDO*/
+.background{
+    background-image: url(BACKGROUND\ CERTO.png);
+    background-size: cover; /*manter proporcao da imagem*/
+    background-position: center; /*centralizar imagem*/
+    width: 100%; /*largura*/
+    height: 25vh; /*altura*/
+}
+
+/*CORPO DA PAGINA*/
+body {
+  background-image: url(BACKGROUND\ CERTO.png);
+  background-size: cover; /*para que img de fundo preencha todo o site*/
+  background-position: center;
+  background-attachment: fixed; /*manter dimensoes plano de fundo*/
+}
+
+/*CABECALHO DA PAGINA*/
+header{
+    display: flex; /*facilitar criacao de layouts adaptaveis*/
+    justify-content: space-around; /*posiciona os links internos para o lado direito*/
+    max-width: 100%;
+    align-items: center; /*centraliza todos os itens*/
+    text-align: center; /*centralizar textos*/
+    padding-top: 1rem; /*afastar os itens do topo cerca de 1cm*/
+}
+
+/*SECOES SOBRE, EDUCACAO E PROJETOS*/
+.links-Internos{
+display: flex; /*coloca os links lado a lado*/
+gap: 3rem; /*espacamento entre os links*/
+font-weight: 300; /*tamanho fonte*/
+cursor: pointer; /*altera o cursor do mouse para mao*/
+}
+
+/*TITULO DOS LINKS INTERNOS*/
+.links-Internos a{
+    color: #fff;
+    font-size: 13px;
+}
+
+/*EVENTO DE MUDAR A COR*/
+.links-Internos a:hover{ /*muda de cor quando o cursor esta em cima*/
+    color: #2ecc71;
+    transition: 0.3s all; /*tempo duracao do efeito*/
+}
+
+/*MANIPULACAO DA LOGO*/
+.logo{
+    height: 40px; /*altura*/
+    width: 40px; /*largura*/
+    background: transparent; /*sem plano de fundo*/
+    border: 1px solid #2ecc71; /*tamanho borda*/
+    color:#2ecc71;
+    border-radius: 50%; /*arredondar borda*/
+    display: inline-flex; /*centralizar o A na borda*/
+    align-items: center; /*centralizar o A na borda*/
+    justify-content: center; /*centralizar o A na borda*/
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/*BOTAO ENTRAR EM CONTATO*/
+button{
+    color:#2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 5px; /*afastamento da margem*/
+    border-radius: 15px; /*arredonda bordas*/
+    font-size: 13px;
+    width: 150px; /*largura do botao*/
+    cursor: pointer;
+}
+
+/*EVENTO NO BOTAO*/
+button:hover{
+    background-color: #2ecc71;
+    color:#fff;
+    transition: 0.5s;
+}
+
+/*ESTILO SECAO SOBRE MIM*/
+section.topoDoSite .flex {
+    display: flex; /*coloca texto e img lado a lado*/
+    gap: 90px; /*distancia entre txt e img*/
+    margin: 10px; /*margem em relacao a pagina*/
+}
+
+.topoDoSite h1{
+    color:#2ecc71;
+    font-size: 25px;
+    padding-left: 250px; /*250px da margem esquerda*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.txt-topo-site{
+    padding-top: 200px;
+}
+
+.topoDoSite p{
+    padding-left: 250px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 17px;
+   color: #fff;
+}
+
+.img-topo-site img {
+    width: 500px; /* Use a pixel value that works for you */
+    height: auto; /* This keeps the image's aspect ratio */
+    display: block;
+    margin: 70px;
+}
+
+
+/*ESTILO SECAO FORMACAO*/
+section.Formacao .flex {
+    display: flex;
+    align-items: flex-sta; /* Aligns to the top */
+    gap: 9px;
+    margin: 30px;
+    padding-top: 1px;
+    padding-left: 250px;
+}
+
+.Formacao h1{
+    color:#2ecc71;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lista-formacao{
+    padding-top: 20px; /*distancia em relacao ao topo*/
+    color: #fff;
+}
+
+.Formacao p{
+    padding-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: #fff;
+}
+
+
+/* ESTILO SEÇÃO PROJETOS */
+.projetos{
+    padding: 60px 4%;
+    text-align: center; /*alinha o txt ao centro*/
+}
+
+.projetos .titulo-projetos{
+    color: #2ecc71;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.projetos .flex-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores como celulares */
+    gap: 30px;
+}
+
+.projetos .projeto-item{
+    background-color: rgba(255, 255, 255, 0.1); /* fundo semi-transparente*/
+    border: 1px solid #2ecc71; /*linha da borda é preenchida*/
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*sombra no box dos projetos*/
+}
+
+.projetos .projeto-item h3{ /*convoca a secao Projetos, a classe projeto-item e o titulo h3*/
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.projetos .projeto-item p{ /*convoca o paragrafo*/
+    color: #ccc;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.projetos .projeto-item a{ /*convoca a descricao do link*/
+    display: inline-block;
+    color: #fff;
+    background-color: #2ecc71;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.projetos .projeto-item a:hover{ /*evento ao passar o cursor sobre o link*/
+    background-color: #1a9c59;
+}
+
+
+/* ESTILO SEÇÃO CONTATO */
+.contato { /*manipula toda a secao contato*/
+    padding: 60px 4%;
+    text-align: center;
+}
+
+.contato .titulo-contato{ /*manipula somente o titulo dessa secao*/
+    color: #2ecc71;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contato form{ /*manipulacao do formulario*/
+    display: flex;
+    flex-direction: column; /*ajusta proporcionalmente as bordar dos inputs*/
+    align-items: center;
+    max-width: 600px; /*largura maxima*/
+    margin: 0 auto; /*centralizar formulario*/
+}
+
+.contato .input-grupo{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contato input[type="text"],
+.contato input[type="email"],
+.contato textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #2ecc71;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    outline: none; /*remove borda*/
+    font-size: 16px;
+}
+
+.contato input::placeholder,
+.contato textarea::placeholder{ /*placeholder para estilizar textos de forms*/
+    color: #aaa;
+}
+
+.contato textarea{
+    resize: vertical; /*permite redimensionar apenas na vertical*/
+    margin-bottom: 20px;
+}
+
+.contato button{
+    color: #2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 12px 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.contato button:hover{
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+
